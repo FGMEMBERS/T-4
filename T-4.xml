@@ -894,7 +894,7 @@ Neutral Point %MAC:		46.6% (2.4m from root leading edge; (1.14, 0, -0.32))
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>0.01</value>
+           <value>0.1</value>
        </product>
     </function>
 
