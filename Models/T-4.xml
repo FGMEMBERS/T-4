@@ -5,6 +5,10 @@
 <PropertyList>
  <path>T-4.ac</path>
 
+ <model>
+   <path>Aircraft/T-4/Instruments/Instruments.xml</path>
+ </model>
+
  <!-- ailerons -->
  <animation>
   <type>rotate</type>
@@ -74,6 +78,41 @@
    <z>-0.135</z>
   </axis>
  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.inner.rearHinge</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.73</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.08</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.outer.rearHinge</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.92</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.03</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+ </animation>
+
 
  <!-- elevator -->
  <animation>
@@ -170,11 +209,12 @@
  <animation>
   <type>rotate</type>
   <property>gear/gear[0]/position-norm</property>
-  <object-name>gear.nose.hatch</object-name>
+  <object-name>gear.nose.frontHatch</object-name>
   <interpolation>
    <entry> <ind>0</ind> <dep>0</dep> </entry>
-   <entry> <ind>0.3</ind> <dep>90</dep> </entry>
-   <entry> <ind>1.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.5</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.6</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
   </interpolation>
   <axis>
    <x>  0.99</x>
@@ -191,6 +231,28 @@
  <animation>
   <type>rotate</type>
   <property>gear/gear[0]/position-norm</property>
+  <object-name>gear.nose.rearHatch</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>135</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>  0.00</x>
+   <y>-1.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m>-4.12</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.36</z-m>
+  </center> 
+ </animation>
+
+
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/position-norm</property>
   <object-name>gear.nose.upperParts</object-name>
   <object-name>gear.nose.cowl</object-name>
   <object-name>gear.nose.upperSpring</object-name>
@@ -199,8 +261,8 @@
   <object-name>gear.nose.tire</object-name>
   <object-name>gear.nose.wheel</object-name>
   <interpolation>
-   <entry> <ind>0</ind> <dep>90</dep> </entry>
-   <entry> <ind>0.3</ind> <dep>90</dep> </entry>
+   <entry> <ind>0</ind> <dep>95</dep> </entry>
+   <entry> <ind>0.3</ind> <dep>95</dep> </entry>
    <entry> <ind>1.0</ind> <dep>-5</dep> </entry>
   </interpolation>
   <axis>
@@ -384,6 +446,29 @@
    <z-m>-0.16</z-m>
   </center>
  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.left.frontHatch</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>120</dep></entry>
+   <entry> <ind>0.8</ind> <dep>120</dep></entry>
+   <entry> <ind>1.0</ind> <dep>15</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>-0.95</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+ </animation>
+
  <animation>
   <type>rotate</type>
   <property>gear/gear[1]/compression-norm</property>
@@ -524,6 +609,28 @@
    <x-m>0.85</x-m>
    <y-m>0.95</y-m>
    <z-m>-0.16</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.right.frontHatch</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>120</dep></entry>
+   <entry> <ind>0.8</ind> <dep>120</dep></entry>
+   <entry> <ind>1.0</ind> <dep>15</dep></entry>
+  </interpolation>
+  <axis>
+   <x>1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>0.95</y-m>
+   <z-m>-0.19</z-m>
   </center>
  </animation>
 

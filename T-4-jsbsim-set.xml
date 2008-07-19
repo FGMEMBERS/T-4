@@ -76,6 +76,14 @@
   </help>
  </sim>
 
+ <systems>
+   <electrical>
+     <outputs>
+       <adi type="float">28.8</adi>
+     </outputs>
+   </electrical>
+ </systems>
+
  <input>
    <keyboard>
       <key n="4">
@@ -113,6 +121,7 @@
   <T-4>
     <file>Aircraft/T-4/Nasal/jwarbirds.nas</file>
     <file>Aircraft/T-4/Nasal/T-4.nas</file>
+    <file>Aircraft/T-4/Nasal/electrical.nas</file>
   </T-4>
  </nasal>
 </PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>landing-light.ac</path>
+<!--
+	<animation>
+		<object-name>radioPanel</object-name> 
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+-->
+</PropertyList>
