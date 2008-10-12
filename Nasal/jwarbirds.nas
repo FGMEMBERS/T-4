@@ -36,7 +36,7 @@ Canopy = {
     new : func {
         var obj = { parents : [Canopy],
         canopy : aircraft.door.new("/controls/canopy", 2) };
-        setlistener("/controls/canopy/opened", func { obj.toggleOpenClose(cmdarg().getBoolValue()); }, 1);
+        setlistener("/controls/canopy/opened", func(n) { obj.toggleOpenClose(n.getBoolValue()); }, 1);
         return obj;
     },
 
