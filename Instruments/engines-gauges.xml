@@ -9,7 +9,7 @@
       <name>temp-l</name>
       <type>rotate</type>
       <object-name>needle-temp-l</object-name>
-      <property>engines/engine[0]/egt_degf</property>
+      <property>engines/engine[0]/egt-degf</property>
       <interpolation> 
         <entry><ind>0.0000</ind><dep>118</dep></entry><!--0-->
         <entry><ind>1200</ind><dep>405</dep></entry><!--max thrust-->
@@ -29,7 +29,7 @@
       <name>temp-r</name>
       <type>rotate</type>
       <object-name>needle-temp-r</object-name>
-      <property>engines/engine[1]/egt_degf</property>
+      <property>engines/engine[1]/egt-degf</property>
       <interpolation> 
         <entry><ind>0.0000</ind><dep>118</dep></entry><!--0-->
         <entry><ind>1200</ind><dep>405</dep></entry><!--max thrust-->
