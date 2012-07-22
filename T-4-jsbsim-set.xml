@@ -122,6 +122,7 @@
     <file>Aircraft/T-4/Nasal/jwarbirds.nas</file>
     <file>Aircraft/T-4/Nasal/T-4.nas</file>
     <file>Aircraft/T-4/Nasal/electrical.nas</file>
+    <file>Aircraft/T-4/Nasal/advroutemgr.nas</file>
   </T-4>
  </nasal>
 </PropertyList>

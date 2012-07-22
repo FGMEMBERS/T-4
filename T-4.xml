@@ -621,6 +621,19 @@ Neutral Point %MAC:		46.6% (2.4m from root leading edge; (1.14, 0, -0.32))
      <output>gear/gear-pos-norm</output>
    </kinematic>
 
+   <scheduled_gain name="Scheduled Steer Pos Deg">
+     <input>fcs/steer-cmd-norm</input>
+     <table>
+       <independentVar>velocities/vg-fps</independentVar>
+       <tableData>
+         10.0        80.0
+         50.0        15.0
+         150.0       2.0
+       </tableData>
+     </table>
+     <output>fcs/steer-pos-deg</output>
+   </scheduled_gain>
+
   </channel>
 
   <channel name="Speedbrake">
@@ -836,7 +849,7 @@ Neutral Point %MAC:		46.6% (2.4m from root leading edge; (1.14, 0, -0.32))
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>aero/beta-rad</property>
-           <value>-0.1</value>
+           <value>-0.059</value>
        </product>
     </function>
 
@@ -894,7 +907,7 @@ Neutral Point %MAC:		46.6% (2.4m from root leading edge; (1.14, 0, -0.32))
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>0.1</value>
+           <value>0.02</value>
        </product>
     </function>
 
