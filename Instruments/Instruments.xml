@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+<!-- T-4 3D models in the Cockpit -->
+<!-- Tat Nishioka -->
+
+<PropertyList>
+  <!-- instruments-->
+<!--
+	<model>
+		<path>Aircraft/T-4/Instruments/mag-compass.xml</path>
+		<offsets>
+			<x-m>2.2800</x-m>
+			<y-m>0.1670</y-m>
+			<z-m>1.4800</z-m>
+		</offsets>
+	</model>
+-->
+	<model>
+		<path>Aircraft/T-4/Instruments/accel.xml</path>
+		<offsets>
+			<x-m>-3.39</x-m>
+			<y-m>-0.195</y-m>
+			<z-m>0.60</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/vsi-6kfpm.xml</path>
+		<offsets>
+			<x-m>-3.32</x-m>
+			<y-m> 0.13</y-m>
+			<z-m> 0.43</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/alti.xml</path>
+		<offsets>
+			<x-m>-3.36</x-m>
+			<y-m> 0.13</y-m>
+			<z-m> 0.52</z-m>
+		<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/adi.xml</path>
+		<offsets>
+			<x-m>-3.34</x-m> <!-- was -3.33 -->
+			<y-m> 0.00</y-m>
+			<z-m> 0.47</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/stdby-adi.xml</path>
+		<offsets>
+			<x-m>-3.38</x-m> <!-- was -3.36 -->
+			<y-m>-0.215</y-m>
+			<z-m> 0.52</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/AoA-gauge.xml</path>
+		<offsets>
+			<x-m>-3.39</x-m>
+			<y-m>-0.12</y-m>
+			<z-m> 0.60</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/asi.xml</path>
+		<offsets>
+			<x-m>-3.36</x-m>
+			<y-m>-0.13</y-m>
+			<z-m> 0.52</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/HSI.xml</path>
+		<offsets>
+			<x-m>-3.266</x-m> <!-- was -3.27 -->
+			<y-m> 0.00</y-m>
+			<z-m> 0.34</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/HSI-2.xml</path>
+		<offsets>
+			<x-m>-3.266</x-m>
+			<y-m> 0.00</y-m>
+			<z-m> 0.34</z-m>
+			<pitch-deg>-26.0</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/engines-gauges.xml</path>
+		<offsets>
+			<x-m>-3.37</x-m>
+			<y-m> 0.30</y-m>
+			<z-m> 0.50</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/crs-beacon.xml</path>
+		<offsets>
+			<x-m>-3.26528</x-m>
+			<y-m> 0.140038</y-m>
+			<z-m> 0.289556</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/salvo.xml</path>
+		<offsets>
+			<x-m>-3.27453</x-m>
+			<y-m>-0.138069</y-m>
+			<z-m> 0.315436</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/gear.xml</path>
+		<offsets>
+			<x-m>-3.32497</x-m>
+			<y-m>-0.290800</y-m>
+			<z-m> 0.410000</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/indicators.xml</path>
+		<offsets>
+			<x-m>-3.37576</x-m>
+			<y-m>-0.290859</y-m>
+			<z-m> 0.509651</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/radio.xml</path>
+		<offsets>
+			<x-m>-3.32597</x-m>
+			<y-m>-0.161257</y-m>
+			<z-m> 0.416472</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/landing-light.xml</path>
+		<offsets>
+			<x-m>-3.26874</x-m>
+			<y-m>-0.306774</y-m>
+			<z-m> 0.297011</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/T-4/Instruments/tacan-vor-mark.xml</path>
+		<offsets>
+			<x-m>-3.279475</x-m>
+			<y-m> 0.0774</y-m>
+			<z-m> 0.373472</z-m>
+			<pitch-deg>-26</pitch-deg>
+		</offsets>
+	</model>
+
+
+</PropertyList>

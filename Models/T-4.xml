@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+
+<!-- chordinate system :-fwd/back+, y:-LR+, z:-down/up+ -->
+
+<PropertyList>
+ <path>T-4.ac</path>
+
+ <model>
+   <path>Aircraft/T-4/Instruments/Instruments.xml</path>
+ </model>
+
+ <!-- ailerons -->
+ <animation>
+  <type>rotate</type>
+  <object-name>aileron.left</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-15</factor>
+  <center>
+   <x-m>1.8</x-m>
+   <y-m>-3.21</y-m>
+   <z-m>0.23</z-m>
+  </center>
+  <axis>
+   <x> 0.260</x>
+   <y>-0.955</y>
+   <z>-0.135</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>aileron.right</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>-15</factor>
+  <center>
+   <x-m>1.8</x-m>
+   <y-m>3.21</y-m>
+   <z-m>0.23</z-m>
+  </center>
+  <axis>
+   <x> 0.260</x>
+   <y> 0.955</y>
+   <z>-0.135</z>
+  </axis>
+ </animation>
+
+ <!-- flaps -->
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.left</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>-30</factor>
+  <center>
+   <x-m> 1.34</x-m>
+   <y-m>-1.00</y-m>
+   <z-m> 0.55</z-m>
+  </center>
+  <axis>
+   <x> 0.285</x>
+   <y>-0.950</y>
+   <z>-0.135</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.right</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.34</x-m>
+   <y-m>1.00</y-m>
+   <z-m>0.55</z-m>
+  </center>
+  <axis>
+   <x> 0.285</x>
+   <y> 0.950</y>
+   <z>-0.135</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.inner.rearHinge</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.73</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.08</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>flap.outer.rearHinge</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.92</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.03</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+ </animation>
+
+
+ <!-- elevator -->
+ <animation>
+  <type>rotate</type>
+  <object-name>hstab</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <factor>15</factor>
+  <center>
+   <x-m>4.56</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.48</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.000</y>
+   <z> 0.000</z>
+  </axis>
+ </animation>
+
+ <!-- rudder -->
+ <animation>
+  <type>rotate</type>
+  <object-name>rudder</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>15</factor>
+  <center>
+   <x-m>4.85</x-m>
+   <y-m>0.00</y-m>
+   <z-m>1.11</z-m>
+  </center>
+  <axis>
+   <x> 0.440</x>
+   <y> 0.000</y>
+   <z> 0.900</z>
+  </axis>
+ </animation>
+
+ <!-- speedbrakes -->
+ <animation>
+  <type>rotate</type>
+  <object-name>speedbrake.left</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>70</factor>
+  <center>
+   <x-m> 3.11</x-m>
+   <y-m>-0.33</y-m>
+   <z-m> 0.70</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y>-0.690</y>
+   <z>-0.720</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>speedbrake.right</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-70</factor>
+  <center>
+   <x-m> 3.11</x-m>
+   <y-m> 0.33</y-m>
+   <z-m> 0.70</z-m>
+  </center>
+  <axis>
+   <x> 0.00</x>
+   <y> 0.690</y>
+   <z>-0.720</z>
+  </axis>
+ </animation>
+
+ <!-- Canopy -->
+ <animation>
+  <type>rotate</type>
+  <property>controls/canopy/position-norm</property>
+  <object-name>canopy.outerFrame.rear</object-name>
+  <object-name>canopy.innerFrame.rear</object-name>
+  <object-name>canopy.glass.rear</object-name>
+  <factor>90</factor>
+  <axis>
+   <x>-0.98</x>
+   <y> 0.00</y>
+   <z>-0.19</z>
+  </axis>
+  <center>
+   <x-m>-2.23</x-m>
+   <y-m> 0.43</y-m>
+   <z-m> 0.61</z-m>
+  </center> 
+ </animation>
+
+ <!-- nose gear -->
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/position-norm</property>
+  <object-name>gear.nose.frontHatch</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0</dep> </entry>
+   <entry> <ind>0.5</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.6</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>  0.99</x>
+   <y> -0.03</y>
+   <z> -0.07</z>
+  </axis>
+  <center>
+   <x-m>-4.68</x-m>
+   <y-m> 0.19</y-m>
+   <z-m>-0.3</z-m>
+  </center> 
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/position-norm</property>
+  <object-name>gear.nose.rearHatch</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>135</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>  0.00</x>
+   <y>-1.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m>-4.12</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.36</z-m>
+  </center> 
+ </animation>
+
+
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/position-norm</property>
+  <object-name>gear.nose.upperParts</object-name>
+  <object-name>gear.nose.cowl</object-name>
+  <object-name>gear.nose.upperSpring</object-name>
+  <object-name>gear.nose.lowerSpring</object-name>
+  <object-name>gear.nose.shaft</object-name>
+  <object-name>gear.nose.tire</object-name>
+  <object-name>gear.nose.wheel</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>95</dep> </entry>
+   <entry> <ind>0.3</ind> <dep>95</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>-5</dep> </entry>
+  </interpolation>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m>-4.16</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.27</z-m>
+  </center> 
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <property>gear/gear[0]/compression-norm</property>
+  <object-name>gear.nose.tire</object-name>
+  <object-name>gear.nose.wheel</object-name>
+  <object-name>gear.nose.cowl</object-name>
+  <object-name>gear.nose.lowerSpring</object-name>
+  <object-name>gear.nose.shaft</object-name>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.5</ind>
+    <dep>-0.25</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.3</dep>
+   </entry>
+   <entry>
+    <ind>10.0</ind>
+    <dep>-0.3</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-0.1736</x>
+   <y> 0.0000</y>
+   <z>-0.9878</z>
+  </axis>
+  <center>
+   <x-m>-4.17</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.33</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/compression-norm</property>
+  <object-name>gear.nose.lowerSpring</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep> 0</dep> </entry>
+   <entry> <ind>0.5</ind> <dep>28</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>33</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>33</dep> </entry>
+  </interpolation>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m>-4.26</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.91</z-m>
+  </center> 
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[0]/compression-norm</property>
+  <object-name>gear.nose.upperSpring</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep> 0</dep> </entry>
+   <entry> <ind>0.5</ind> <dep>-28</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>-33</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>-33</dep> </entry>
+  </interpolation>
+  <axis>
+   <x> 0.00</x>
+   <y> 1.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m>-4.17</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.54</z-m>
+  </center> 
+<!--
+  <center>
+   <x-m>-4.00</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.77</z-m>
+  </center> 
+-->
+ </animation>
+
+ <!-- left gear -->
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.left.upperAbsorber</object-name>
+  <object-name>gear.left.middleAbsorber</object-name>
+  <object-name>gear.left.lowerAbsorber</object-name>
+  <object-name>gear.left.wheel</object-name>
+  <object-name>gear.left.tire</object-name>
+  <object-name>gear.left.lowerJoint</object-name>
+  <object-name>gear.left.upperJoint</object-name>
+  <object-name>gear.left.lowerSubJoint</object-name>
+  <object-name>gear.left.middleSubJoint</object-name>
+  <object-name>gear.left.upperSubJoint</object-name>
+  <object-name>gear.left.upperShaftJoint</object-name>
+  <object-name>gear.left.lowerShaftJoint</object-name>
+  <object-name>gear.left.midUpperJoint</object-name>
+  <object-name>gear.left.midLowerJoint</object-name>
+  <object-name>gear.left.midUpperSubShaftStay</object-name>
+  <object-name>gear.left.midLowerSubShaftStay</object-name>
+  <object-name>gear.left.innerJoint</object-name>
+  <object-name>gear.left.outerJoint</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.3</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>0.00</x>
+   <y>1.00</y>
+   <z>-0.72</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m>-0.38</y-m>
+   <z-m>-0.38</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.left.outerLink</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.3</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>0.00</x>
+   <y>1.00</y>
+   <z>-0.72</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <z-m>-0.18</z-m>
+   <y-m>-0.87</y-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.left.hatch75deg</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>75</dep></entry>
+   <entry> <ind>1.0</ind> <dep>75</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>-0.95</y-m>
+   <z-m>-0.16</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.left.frontHatch</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>120</dep></entry>
+   <entry> <ind>0.8</ind> <dep>120</dep></entry>
+   <entry> <ind>1.0</ind> <dep>15</dep></entry>
+  </interpolation>
+  <axis>
+   <x>-1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>-0.95</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/compression-norm</property>
+  <object-name>gear.left.upperAbsorber</object-name>
+  <object-name>gear.left.middleAbsorber</object-name>
+  <object-name>gear.left.lowerAbsorber</object-name>
+  <object-name>gear.left.wheel</object-name>
+  <object-name>gear.left.tire</object-name>
+  <object-name>gear.left.lowerJoint</object-name>
+  <object-name>gear.left.upperJoint</object-name>
+  <object-name>gear.left.lowerSubJoint</object-name>
+  <object-name>gear.left.middleSubJoint</object-name>
+  <object-name>gear.left.upperSubJoint</object-name>
+  <object-name>gear.left.upperShaftJoint</object-name>
+  <object-name>gear.left.lowerShaftJoint</object-name>
+  <object-name>gear.left.midUpperJoint</object-name>
+  <object-name>gear.left.midLowerJoint</object-name>
+  <object-name>gear.left.midUpperSubShaftStay</object-name>
+  <object-name>gear.left.midLowerSubShaftStay</object-name>
+  <object-name>gear.left.innerJoint</object-name>
+  <object-name>gear.left.outerJoint</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+   <entry> <ind>0.35</ind> <dep>15</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>20</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>20</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>-1.00</x>
+   <y> 0.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m>-0.87</y-m>
+   <z-m>-0.03</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>gear.left.wheel</object-name>
+  <object-name>gear.left.tire</object-name>
+  <property>gear/gear[1]/compression-norm</property>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+   <entry> <ind>0.35</ind> <dep>15</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>20</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>20</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m>-1.52</y-m>
+   <z-m>-1.14</z-m>
+  </center>
+ </animation>
+
+ <!-- right gear -->
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[2]/position-norm</property>
+  <object-name>gear.right.upperAbsorber</object-name>
+  <object-name>gear.right.middleAbsorber</object-name>
+  <object-name>gear.right.lowerAbsorber</object-name>
+  <object-name>gear.right.wheel</object-name>
+  <object-name>gear.right.tire</object-name>
+  <object-name>gear.right.lowerJoint</object-name>
+  <object-name>gear.right.upperJoint</object-name>
+  <object-name>gear.right.lowerSubJoint</object-name>
+  <object-name>gear.right.middleSubJoint</object-name>
+  <object-name>gear.right.upperSubJoint</object-name>
+  <object-name>gear.right.upperShaftJoint</object-name>
+  <object-name>gear.right.lowerShaftJoint</object-name>
+  <object-name>gear.right.midUpperJoint</object-name>
+  <object-name>gear.right.midLowerJoint</object-name>
+  <object-name>gear.right.midUpperSubShaftStay</object-name>
+  <object-name>gear.right.midLowerSubShaftStay</object-name>
+  <object-name>gear.right.innerJoint</object-name>
+  <object-name>gear.right.outerJoint</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.3</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>0.00</x>
+   <y>1.00</y>
+   <z>0.72</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m> 0.38</y-m>
+   <z-m>-0.38</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[2]/position-norm</property>
+  <object-name>gear.right.outerLink5deg</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>0.0</ind> <dep>90</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>0</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>0.00</x>
+   <y>1.00</y>
+   <z>0.72</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m> 0.87</y-m>
+   <z-m>-0.03</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[2]/position-norm</property>
+  <object-name>gear.right.hatch75deg</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>75</dep></entry>
+   <entry> <ind>1.0</ind> <dep>75</dep></entry>
+  </interpolation>
+  <axis>
+   <x>1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>0.95</y-m>
+   <z-m>-0.16</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/position-norm</property>
+  <object-name>gear.right.frontHatch</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep></entry>
+   <entry> <ind>0.3</ind> <dep>120</dep></entry>
+   <entry> <ind>0.8</ind> <dep>120</dep></entry>
+   <entry> <ind>1.0</ind> <dep>15</dep></entry>
+  </interpolation>
+  <axis>
+   <x>1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m>0.85</x-m>
+   <y-m>0.95</y-m>
+   <z-m>-0.19</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[2]/compression-norm</property>
+  <object-name>gear.right.upperAbsorber</object-name>
+  <object-name>gear.right.middleAbsorber</object-name>
+  <object-name>gear.right.lowerAbsorber</object-name>
+  <object-name>gear.right.wheel</object-name>
+  <object-name>gear.right.tire</object-name>
+  <object-name>gear.right.lowerJoint</object-name>
+  <object-name>gear.right.upperJoint</object-name>
+  <object-name>gear.right.lowerSubJoint</object-name>
+  <object-name>gear.right.middleSubJoint</object-name>
+  <object-name>gear.right.upperSubJoint</object-name>
+  <object-name>gear.right.lowerShaftJoint</object-name>
+  <object-name>gear.right.midUpperJoint</object-name>
+  <object-name>gear.right.midLowerJoint</object-name>
+  <object-name>gear.right.midUpperSubShaftStay</object-name>
+  <object-name>gear.right.midLowerSubShaftStay</object-name>
+  <object-name>gear.right.innerJoint</object-name>
+  <object-name>gear.right.outerJoint</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+   <entry> <ind>0.35</ind> <dep>15</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>20</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>20</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>1.00</x>
+   <y>0.00</y>
+   <z>0.00</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m> 0.87</y-m>
+   <z-m>-0.03</z-m>
+  </center>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>gear.right.wheel</object-name>
+  <object-name>gear.right.tire</object-name>
+  <property>gear/gear[2]/compression-norm</property>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep>0</dep> </entry>
+   <entry> <ind>0.35</ind> <dep>15</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>20</dep> </entry>
+   <entry> <ind>10.0</ind> <dep>20</dep> </entry>
+  </interpolation>
+  <axis>
+   <x>-1.00</x>
+   <y> 0.00</y>
+   <z> 0.00</z>
+  </axis>
+  <center>
+   <x-m> 0.84</x-m>
+   <y-m> 1.52</y-m>
+   <z-m>-1.14</z-m>
+  </center>
+ </animation>
+
+</PropertyList>

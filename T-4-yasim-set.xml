@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <description>Kawasaki T-4 "Blue Impulse (yasim)"</description>
+  <author>Tatsuhiro Nishioka</author>
+  <status>development</status>
+ 
+  <flight-model>yasim</flight-model>
+  <aero>T-4-yasim</aero>
+
+<!--
+  <startup>
+   <splash-texture>Aircraft/T-4/splash.rgb</splash-texture>
+  </startup>
+
+-->
+  <sound>
+   <path>Aircraft/T-4/T-4-sound.xml</path>
+  </sound>
+
+  <!-- virtual-cockpit archive="y">true</virtual-cockpit -->
+
+  <model>
+   <path>Aircraft/T-4/Models/T-4.xml</path>
+  </model>
+
+  <chase-distance-m type="double" archive="y">-35.0</chase-distance-m>
+
+  <view>
+   <config>
+     <pitch-offset-deg>-8.8</pitch-offset-deg>
+     <default-field-of-view-deg>80</default-field-of-view-deg>
+   </config>
+  </view>
+
+  <view n="0">
+   <name>Cockpit View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+            <x-offset-m archive="y">0.0</x-offset-m>
+            <y-offset-m archive="y">0.66</y-offset-m>
+            <z-offset-m archive="y">-2.80</z-offset-m>
+            <pitch-offset-deg>-10</pitch-offset-deg>
+            <default-field-of-view-deg>67.0</default-field-of-view-deg>
+    </config>
+   </view>
+
+  <view n="100">
+   <name>Trainer View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>  
+            <from-model type="bool">true</from-model>
+            <from-model-idx type="int">0</from-model-idx>
+            <ground-level-nearplane-m type="double">0.03</ground-level-nearplane-m>
+            <x-offset-m archive="y">0.0</x-offset-m>
+            <y-offset-m archive="y">1.03</y-offset-m>
+            <z-offset-m archive="y">-1.33</z-offset-m>
+            <pitch-offset-deg>-10</pitch-offset-deg>
+            <default-field-of-view-deg>67.0</default-field-of-view-deg>
+    </config>
+   </view>
+
+  <help>
+   <key>
+    <name>Ctrl-B</name>
+    <desc>toggle speed brake</desc>
+   </key>
+  </help>
+ </sim>
+
+ <input>
+   <keyboard>
+   </keyboard>
+  </input>
+
+ <engines>
+  <engine n="0">
+   <running>true</running>
+  </engine>
+  <engine n="1">
+   <running>true</running>
+  </engine>
+ </engines>
+
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us archive="y">330</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">330</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+
+</PropertyList>
+
