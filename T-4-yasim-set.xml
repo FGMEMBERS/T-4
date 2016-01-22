@@ -6,10 +6,11 @@
   <description>Kawasaki T-4 "Blue Impulse (yasim)"</description>
   <author>Tatsuhiro Nishioka</author>
   <status>development</status>
- 
+
   <flight-model>yasim</flight-model>
   <aero>T-4-yasim</aero>
-
+  <variant-of>T-4-jsbsim</variant-of>
+  
 <!--
   <startup>
    <splash-texture>Aircraft/T-4/splash.rgb</splash-texture>
@@ -52,7 +53,7 @@
    <name>Trainer View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
-    <config>  
+    <config>
             <from-model type="bool">true</from-model>
             <from-model-idx type="int">0</from-model-idx>
             <ground-level-nearplane-m type="double">0.03</ground-level-nearplane-m>
@@ -98,4 +99,3 @@
  </consumables>
 
 </PropertyList>
-
